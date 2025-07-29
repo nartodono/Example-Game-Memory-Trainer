@@ -1,8 +1,8 @@
 # Example Game Memory Trainer
 
-## ⚠️ Read This
+## Read This
 
-**WARNING:**  
+⚠️ **WARNING:**  
 This project is intended for **educational and research purposes only**.  
 Do **not** use it to cheat in online/multiplayer games or violate any game's ToS (Terms of Service).  
 **Use responsibly and ethically!**
@@ -82,7 +82,7 @@ This trainer works by accessing the memory of another application (the game), re
 
 ---
 
-### 🖼Screenshots
+### Screenshots
 
 | ![Inactive Trainer](docs/images/unactiveTrainer.png) | ![Active Trainer](docs/images/activeTrainer.png) |
 |:--:|:--:|
@@ -90,11 +90,15 @@ This trainer works by accessing the memory of another application (the game), re
 
 ![In-game](docs/images/in-game.png)
 
+---
+
 ### How to Find the Pointer Chain
 
 Assuming you have already found the value address using Cheat Engine (as shown below):
 
-![First Step](docs/images/ce-1.png)
+| ![First Step](docs/images/ce-1.png) |
+|:--:|
+| _Find the correct value address using Cheat Engine (e.g., Money, EXP, Level)_ |
 
 1. **Generate Pointermap:**  
    Right-click the found address and choose **"Generate pointermap"**.  
@@ -104,7 +108,9 @@ Assuming you have already found the value address using Cheat Engine (as shown b
    Close the game, open it again, and repeat step 1 to find the new address.  
    Generate a **second pointermap** file using the same process.
 
-![Second Step](docs/images/ce-2.png)
+| ![Second Step](docs/images/ce-2.png) |
+|:--:|
+| _Right-click on the new address and generate another pointermap after restarting the game_ |
 
 3. **Pointer Scan:**  
    With both pointermaps created, right-click the new found address and select **"Pointer scan for this address..."**.  
@@ -115,19 +121,25 @@ Assuming you have already found the value address using Cheat Engine (as shown b
    (Optional) You can set the **Maximum Offset** to 2048 and the **Max Level** to 5 to narrow down the search depth.  
    Press **OK** to start the scan.
 
-![Third Step](docs/images/ce-3.png)
+| ![Third Step](docs/images/ce-3.png) |
+|:--:|
+| _Configure the pointer scan settings: add both pointermaps, set offsets/levels, then start the scan_ |
 
 5. **Wait for Scan to Complete:**  
    Cheat Engine will now scan and compare the pointermaps. Just wait until it’s finished.
 
-![Fourth Step](docs/images/ce-4.png)
+| ![Fourth Step](docs/images/ce-4.png) |
+|:--:|
+| _Pointer scanner running: waiting for results_ |
 
 6. **Analyze the Results:**  
    Once the scan is done, you will see results like below.  
    Here, you can see that the base address is `mono-2.0-bdwgc.dll + 00A14118` and the pointer chain (offsets) is:  
-   `43C, 68, 0, 30, C8` (for the Level value; Money/EXP will have different last offsets).
+   `43C, 68, 0, 30, C8` (for the Level value; Money and EXP will have different last offsets).
 
-![Fifth Step](docs/images/ce-5.png)
+| ![Fifth Step](docs/images/ce-5.png) |
+|:--:|
+| _Pointer scanner results: final pointer chain and offsets you can use in your trainer code_ |
 
 ---
 
