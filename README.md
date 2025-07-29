@@ -31,6 +31,30 @@ The example uses *Supermarket Simulator v1.0.2 (133)* as the demo target
 
 ---
 
+## Requirements
+
+- **Windows OS:**  
+  Project only works on Windows (tested on Windows 11)
+
+- **.NET Framework 4.8:**  
+  Make sure [.NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) is installed on your system
+
+- **Visual Studio:**  
+  Use [Visual Studio](https://visualstudio.microsoft.com/) (any recent version: Community, Professional, or Enterprise).  
+  > *Note: Visual Studio Code is NOT supported.*
+
+- **Cheat Engine:**  
+  [Cheat Engine](https://cheatengine.org/) (any version should work, but the latest is recommended)
+
+- **Supermarket Simulator v1.0.2 (133):**  
+  The trainer is designed and tested for this specific game version
+
+- **Administrator Privileges:**  
+  (Optional)  
+  If you experience issues or the trainer can't access the game memory, run both the game and the trainer as Administrator.
+
+---
+
 ## How to Use
 
 1. **Clone this repository to your computer:**
