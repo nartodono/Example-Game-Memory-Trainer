@@ -19,6 +19,11 @@ Do **not** use it to cheat in online/multiplayer games or violate any game's ToS
 This repository demonstrates how to build a **game memory trainer** in C# (WinForms), focusing on real process memory editing in Windows.  
 The example uses *Supermarket Simulator v1.0.2 (133)* as the demo target
 
+> **Note:**  
+> This project is an educational example and is designed specifically for Supermarket Simulator v1.0.2 (133).  
+> There are no plans to update for future or older versions of the game.  
+> The techniques shown here can be adapted by anyone wanting to update for a different version.
+
 ---
 
 ## Features
