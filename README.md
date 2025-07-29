@@ -56,21 +56,38 @@ The example uses *Supermarket Simulator v1.0.2 (133)* as the demo target
 
 ## Learning Section
 
-You can see all the code logic below
-[Logic Code](Trainer/Form1.cs)
-you can ignore all files other then this since those only used to make the program working properly.
+You can see the main code logic here:  
+[**Form1.cs**](Trainer/Form1.cs)  
+You can ignore the other files—those are mostly auto-generated or boilerplate needed to make the program run in Visual Studio.
 
-### How it work?
+---
 
-This trainer basically only accessing another application process, read it memory and write/modify current memory.
-The program firstly find the game process of Supermarket Simulator. the program always know if the game is open or no since it's always detect the process continously every one second
-if the process is found, the program now find the memory address of money, exp and level by using the pointer chain.
-once we get the memory address now we can read or even modify it's value.
-The pointer chain to memory address where the game save value of money, exp and level is obtained through Cheat Engine, please refer to [how to find the pointer chain](##how-to-find-the-pointer-chain) section about how to reproduce the step
-The program is using pointer chain since the memory address is change dynamically everytime the game is opened
+### 🧠 How Does It Work?
 
-| ![unactive Trainer](docs/images/unactiveTrainer.png) | ![Active Trainer](docs/images/activeTrainer.png) |
+This trainer works by accessing the memory of another application (the game), reading, and modifying its values.
+
+1. **Process Detection:**  
+   The program first searches for the *Supermarket Simulator* process. It continuously checks every second, so it always knows if the game is open or not.
+
+2. **Pointer Chain Traversal:**  
+   If the process is found, the trainer locates the memory addresses for **Money, EXP, and Level** by following a multi-level pointer chain.  
+   These pointer chains were discovered using Cheat Engine.  
+   *(See the section below: [How to Find the Pointer Chain](#how-to-find-the-pointer-chain))*
+
+3. **Reading & Modifying Memory:**  
+   Once the addresses are found, the trainer can read or write the values in real-time.
+
+4. **Why Use a Pointer Chain?**  
+   The pointer chain is needed because the actual memory addresses change every time the game starts (dynamic memory allocation). The chain lets us always find the right spot, no matter what address is used this session.
+
+---
+
+### 🖼️ Screenshots
+
+| ![Inactive Trainer](docs/images/unactiveTrainer.png) | ![Active Trainer](docs/images/activeTrainer.png) |
 |:--:|:--:|
-| *Unactive Trainer* | *Active Trainer* |
+| *Inactive Trainer* | *Active Trainer* |
 
-## How to find the Pointer Chain
+![In-game](docs/images/in-game.png)
+
+### How to find the Pointer Chain
