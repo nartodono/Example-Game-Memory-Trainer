@@ -2,8 +2,11 @@
 
 ## Read This
 **WARNING**
+
 This Project is intended as **educational and research purpose only.**
+
 do **not** use it to cheat in online/multiplayer games or violate any game's ToS (Terms of Service)
+
 **User responsibly and ethically!**
 
 ---
