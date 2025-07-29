@@ -1,5 +1,10 @@
 # Example Game Memory Trainer
 
+![C#](https://img.shields.io/badge/Made%20with-C%23-239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
+![WinForms](https://img.shields.io/badge/WinForms-.NET-blueviolet?style=for-the-badge&logo=windows)
+![Educational Purpose](https://img.shields.io/badge/Purpose-Educational-blue?style=for-the-badge&logo=bookstack)
+![Reverse Engineering](https://img.shields.io/badge/Reverse%20Engineering-Practice-purple?style=for-the-badge&logo=hackthebox)
+
 ## Read This
 
 ⚠️ **WARNING:**  
@@ -82,6 +87,13 @@ This trainer works by accessing the memory of another application (the game), re
 
 ---
 
+**Technical Note:**  
+The entire memory manipulation in this project is based on **reverse engineering the game using Cheat Engine**.  
+The relevant memory addresses (Money, EXP, Level) are dynamically found through **pointer chain analysis**.  
+Pointer chains are located by first finding the value in Cheat Engine, then tracing back using the pointer scan feature, which is a standard reverse engineering approach for games with dynamic memory addresses.
+
+---
+
 ### Screenshots
 
 | ![Inactive Trainer](docs/images/unactiveTrainer.png) | ![Active Trainer](docs/images/activeTrainer.png) |
@@ -141,10 +153,68 @@ Assuming you have already found the value address using Cheat Engine (as shown b
 |:--:|
 | _Pointer scanner results: final pointer chain and offsets you can use in your trainer code_ |
 
----
+> **Note:**  
+> The screenshots above were not taken in a single continuous session.  
+> They are a mix of different steps while searching for Money, EXP, and Level addresses, so you may notice that the addresses, pointermaps, and pointer scan results don't always match up perfectly from one image to the next.
 
 **Tip:**  
 This method ensures you get a reliable pointer chain that works even though the actual memory address changes every time the game is restarted (dynamic memory).  
 The pointer chain you find here can then be used in your code to always locate the correct value in memory.
 
+---
 
+## License
+
+![MIT License](https://img.shields.io/badge/License-MIT-green)
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## FAQ
+
+### Q: Is this project a cheating tool?
+
+**A:**  
+No, this project is intended **for educational and research purposes only**.  
+It demonstrates the technical process of memory editing and reverse engineering using C#.  
+Do **not** use it to cheat in online or multiplayer games, or violate any game's Terms of Service.
+
+---
+
+### Q: Does the trainer not work with version other than Supermarket Simulator V1.0.2(133)? 
+
+**A:**  
+This trainer is designed for **Supermarket Simulator v1.0.2 (133)**.  
+If you use a different version, the memory layout and pointer chains may be different, so the trainer may not work as expected.  
+If this happens, you will need to find and update the correct pointer chains for your game version.
+
+> **Note:**  
+> For this issue, a more robust technique is **signature scanning** (Array of Bytes / AoB scan),  
+> which is more resistant to minor game updates because it searches for unique byte patterns instead of fixed memory addresses.
+
+---
+
+### Q: How do I update the pointer chain for a different version?
+
+**A:**  
+See the section [How to Find the Pointer Chain](#how-to-find-the-pointer-chain) in this README for step-by-step instructions using Cheat Engine.
+
+---
+
+### Q: Can I use this trainer with other games?
+
+**A:**  
+Technically, yes—**with significant modifications**.  
+You will need to find the appropriate process, value addresses, and pointer chains for the other game using Cheat Engine or similar tools, and update the code accordingly.
+
+---
+
+### Q: Is it safe to use this project?
+
+**A:**  
+The code itself is safe and open source.  
+However, modifying game memory can sometimes trigger anti-cheat protections in some games.  
+**Always use this project for offline, single-player, and educational purposes only.**
+
+---
