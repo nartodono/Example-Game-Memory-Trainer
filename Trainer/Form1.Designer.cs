@@ -314,7 +314,7 @@ namespace Trainer
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Trainer Test 1";
+            this.Text = "Example Game Memory Trainer";
             this.headerPanel.ResumeLayout(false);
             this.headerPanel.PerformLayout();
             this.groupBoxStats.ResumeLayout(false);
