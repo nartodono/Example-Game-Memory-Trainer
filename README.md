@@ -57,7 +57,7 @@ The example uses *Supermarket Simulator v1.0.2 (133)* as the demo target
 ## Learning Section
 
 You can see all the code logic below
-![Logic Code](Trainer/Form1.cs)
+[Logic Code](Trainer/Form1.cs)
 you can ignore all files other then this since those only used to make the program working properly.
 
 ### How it work?
@@ -66,7 +66,7 @@ This trainer basically only accessing another application process, read it memor
 The program firstly find the game process of Supermarket Simulator. the program always know if the game is open or no since it's always detect the process continously every one second
 if the process is found, the program now find the memory address of money, exp and level by using the pointer chain.
 once we get the memory address now we can read or even modify it's value.
-The pointer chain to memory address where the game save value of money, exp and level is obtained through Cheat Engine, please refer to ![how to find the pointer chain](##how-to-find-the-pointer-chain) section about how to reproduce the step
+The pointer chain to memory address where the game save value of money, exp and level is obtained through Cheat Engine, please refer to [how to find the pointer chain](##how-to-find-the-pointer-chain) section about how to reproduce the step
 The program is using pointer chain since the memory address is change dynamically everytime the game is opened
 
 | ![unactive Trainer](docs/images/unactiveTrainer.png) | ![Active Trainer](docs/images/activeTrainer.png) |
