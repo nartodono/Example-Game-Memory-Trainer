@@ -7,7 +7,7 @@
 
 ## Read This
 
-⚠️ **WARNING:**  
+⚠️ **DISCLAIMER**  
 This project is intended for **educational and research purposes only**.  
 Do **not** use it to cheat in online/multiplayer games or violate any game's ToS (Terms of Service).  
 **Use responsibly and ethically!**
@@ -17,7 +17,7 @@ Do **not** use it to cheat in online/multiplayer games or violate any game's ToS
 ## Introduction
 
 This repository demonstrates how to build a **game memory trainer** in C# (WinForms), focusing on real process memory editing in Windows.  
-The example uses *Supermarket Simulator v1.0.2 (133)* as the demo target
+The example uses *Supermarket Simulator v1.0.2 (133)* as the demo target.
 
 > **Note:**  
 > This project is an educational example and is designed specifically for Supermarket Simulator v1.0.2 (133).  
@@ -30,7 +30,7 @@ The example uses *Supermarket Simulator v1.0.2 (133)* as the demo target
 
 - **Automatic game process detection**
 - **Edit in-game Money, EXP, and Level** via a simple UI
-- **Freeze Money:** lock the value so it never decreases
+- **Freeze Money:** lock the value so it never decreases (even if you spend in-game)
 - Clean, readable, and well-commented code for easy learning
 - Great starting point for anyone interested in game hacking, trainers, or the Windows API with C#
 
@@ -87,6 +87,13 @@ The example uses *Supermarket Simulator v1.0.2 (133)* as the demo target
 > - It may **not** work for other versions of the game since those versions have not been tested yet.
 
 ---
+
+Want to try the trainer without building from source?  
+Just head to the [Release](https://github.com/nartodono/Example-Game-Memory-Trainer/releases) page, download the latest pre-built trainer, and follow all instructions there.
+
+---
+
+> **Please read all information on the Release page before running the trainer.**
 
 ## Learning Section
 
@@ -211,7 +218,7 @@ Do **not** use it to cheat in online or multiplayer games, or violate any game's
 
 ---
 
-### Q: Does the trainer work with version other than Supermarket Simulator V1.0.2(133)? 
+### Q: Does the trainer work with versions other than Supermarket Simulator v1.0.2 (133)?
 
 **A:**  
 This trainer is designed for **Supermarket Simulator v1.0.2 (133)**.  
