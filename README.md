@@ -211,7 +211,7 @@ Do **not** use it to cheat in online or multiplayer games, or violate any game's
 
 ---
 
-### Q: Does the trainer not work with version other than Supermarket Simulator V1.0.2(133)? 
+### Q: Does the trainer work with version other than Supermarket Simulator V1.0.2(133)? 
 
 **A:**  
 This trainer is designed for **Supermarket Simulator v1.0.2 (133)**.  
