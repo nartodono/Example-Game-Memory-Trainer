@@ -80,20 +80,20 @@ The example uses *Supermarket Simulator v1.0.2 (133)* as the demo target.
 6. **Use the trainer app:**  
    The trainer will automatically detect the running game and let you edit Money, EXP, Level, or freeze the money value in real time.
 
----
+
 
 > **Please Note:**  
 > - This trainer is designed and tested for *Supermarket Simulator v1.0.2 (133)*.  
 > - It may **not** work for other versions of the game since those versions have not been tested yet.
 
----
+
 
 Want to try the trainer without building from source?  
 Just head to the [Release](https://github.com/nartodono/Example-Game-Memory-Trainer/releases) page, download the latest pre-built trainer, and follow all instructions there.
 
----
-
 > **Please read all information on the Release page before running the trainer.**
+
+---
 
 ## Learning Section
 
