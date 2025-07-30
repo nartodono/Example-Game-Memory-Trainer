@@ -73,20 +73,18 @@ The example uses *Supermarket Simulator v1.0.2 (133)* as the demo target.
 3. **Open `Trainer.sln` using Visual Studio.**
 
 4. **Build and run the project:**  
-   - Click the **Start** button or press `F5` in Visual Studio.
+   - In Visual Studio, click the **Start** button or press `F5` to build and run.
 
 5. **Start _Supermarket Simulator v1.0.2 (133)_** on your PC.
 
 6. **Use the trainer app:**  
    The trainer will automatically detect the running game and let you edit Money, EXP, Level, or freeze the money value in real time.
 
-
-
 > **Please Note:**  
 > - This trainer is designed and tested for *Supermarket Simulator v1.0.2 (133)*.  
 > - It may **not** work for other versions of the game since those versions have not been tested yet.
 
-
+---
 
 Want to try the trainer without building from source?  
 Just head to the [Release](https://github.com/nartodono/Example-Game-Memory-Trainer/releases) page, download the latest pre-built trainer, and follow all instructions there.
