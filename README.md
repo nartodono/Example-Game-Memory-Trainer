@@ -117,7 +117,7 @@ This trainer works by accessing the memory of another application (the game), re
    Once the addresses are found, the trainer can read or write the values in real-time.
 
 4. **Why Use a Pointer Chain?**  
-   The pointer chain is needed because the actual memory addresses change every time the game starts (dynamic memory allocation). The chain lets us always find the right spot, no matter what address is used this session.
+   The pointer chain is needed because the actual memory addresses change every time the game starts (dynamic memory allocation). The chain lets us always find the right spot, no matter what address is used in this session.
 
 ---
 
@@ -148,7 +148,7 @@ Assuming you have already found the value address using Cheat Engine (as shown b
 
 1. **Generate Pointermap:**  
    Right-click the found address and choose **"Generate pointermap"**.  
-   Wait until the process finishes.
+   Wait until the process finished.
 
 2. **Restart & Repeat:**  
    Close the game, open it again, and repeat step 1 to find the new address.  
@@ -172,7 +172,7 @@ Assuming you have already found the value address using Cheat Engine (as shown b
 | _Configure the pointer scan settings: add both pointermaps, set offsets/levels, then start the scan_ |
 
 5. **Wait for Scan to Complete:**  
-   Cheat Engine will now scan and compare the pointermaps. Just wait until it’s finished.
+   Cheat Engine will now scan and compare the pointermaps. Just wait until it is finished.
 
 | ![Fourth Step](docs/images/ce-4.png) |
 |:--:|
